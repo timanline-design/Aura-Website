@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Noto Serif", ui-serif, Georgia, serif;
+  --font-display: "Space Grotesk", sans-serif;
+
+  --color-aura-bg: #fbf9f8;
+  --color-aura-primary: #565e52;
+  --color-aura-accent: #7A8275;
+  --color-aura-surface: #F4EFEB;
+  --color-aura-text: #1b1c1c;
+  --color-aura-muted: #757871;
+}
+
+@layer base {
+  body {
+    @apply bg-aura-bg text-aura-text font-sans antialiased;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
